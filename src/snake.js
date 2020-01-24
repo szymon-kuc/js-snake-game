@@ -1,9 +1,12 @@
+const skinTexture = "https://raw.githubusercontent.com/IronKnight545/snake/master/assets/skin.jpg";
+const headTexture = "https://raw.githubusercontent.com/IronKnight545/snake/master/assets/head.jpg";
+
 
 let skin = new Image();
-skin.src="./../assets/skin.jpg";
+skin.src= skinTexture;
 
 let head = new Image();
-head.src="./../assets/head.jpg";
+head.src= headTexture;
 
 export default class Snake {
     constructor(gameWidth, gameHeight){
