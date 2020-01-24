@@ -1,0 +1,12 @@
+#gameScreen {
+    border: 1px solid black;
+}
+img {
+    display: none;
+}
+.container {
+    display: flex;
+}
+#statistics{
+    margin-left: 50px;
+}
