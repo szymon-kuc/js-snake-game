@@ -1,4 +1,10 @@
 
+let skin = new Image();
+skin.src="../assets/skin.jpg";
+
+let head = new Image();
+head.src="../assets/head.jpg";
+
 export default class Snake {
     constructor(gameWidth, gameHeight){
         this.snake= [{x: 30*4, y: 30},{x: 30*3, y: 30},{x: 30*2, y: 30},{x: 30, y: 30}];
@@ -39,7 +45,8 @@ export default class Snake {
     }
 
     draw(ctx){
-        ctx.fillStyle = "#037ffc";
+        let pattern = ctx.createPattern(skin, "repeat")
+        ctx.fillStyle = pattern;
         //delet last + add new
         if(this.pause == false){
             this.snake.pop();
@@ -55,6 +62,11 @@ export default class Snake {
                 this.restart();
             }
         }
+    }
+    drawHead(ctx){
+        let pattern = ctx.createPattern(head, "repeat")
+        ctx.fillStyle = pattern;
+        ctx.fillRect(this.snake[0].x  ,this.snake[0].y, this.size, this.size)
     }
 
 }

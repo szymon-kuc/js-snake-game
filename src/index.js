@@ -22,6 +22,7 @@ setInterval(() => {
     fruitObj.draw(ctx);
     snakeBody.eat(fruitObj.fruit);
     snakeBody.draw(ctx);
+    snakeBody.drawHead(ctx);
     length.innerHTML = "Current length: "+snakeBody.length;
     maxLength.innerHTML = "Max length: "+snakeBody.maxLength;
     if(snakeBody.pause==true){
