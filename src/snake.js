@@ -1,9 +1,9 @@
 
 let skin = new Image();
-skin.src="../assets/skin.jpg";
+skin.src="./../assets/skin.jpg";
 
 let head = new Image();
-head.src="../assets/head.jpg";
+head.src="./../assets/head.jpg";
 
 export default class Snake {
     constructor(gameWidth, gameHeight){
