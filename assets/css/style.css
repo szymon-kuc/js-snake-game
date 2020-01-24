@@ -1,13 +1,26 @@
+body{
+    background-color: #242424;
+    color: #fff;
+}
+.game-area{
+    display: flex;
+    justify-content: center;
+}
 #gameScreen {
     border: 1px solid black;
     background-image: url("../background.png");
+    align-self: center;
 }
 img {
     display: none;
 }
-.container {
-    display: flex;
-}
 #statistics{
-    margin-left: 50px;
+    margin-left: 20px;
+    display: flex;
+    justify-content: center;
+}
+.info{
+    margin-right: 20px;
+    margin-top: 20px;
+    font-size: 18px;
 }
